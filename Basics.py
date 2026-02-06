@@ -1,4 +1,6 @@
 import pandas as pd
 import numpy as np
 
-print("hi")
+#Pandas Series
+#Its a 1D LABELED array which can hold any type of data.
+#Series is vertical whereas Array's are Horizontal.
