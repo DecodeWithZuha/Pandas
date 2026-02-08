@@ -10,4 +10,4 @@ df =pd.read_csv(r'99laptop.csv')
 df_raw = df[['name_c', 'price']]
 print(df_raw.head())
 
-
+print(df_raw.columns.tolist())
