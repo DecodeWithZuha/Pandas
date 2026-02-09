@@ -8,6 +8,11 @@ df =pd.read_csv(r'99laptop.csv')
 #print(df['name_c'].iloc[77])
 
 df_raw = df[['name_c', 'price']]
-print(df_raw.head())
+#print(df_raw.head())
 
-print(df_raw.columns.tolist())
+#print(df_raw.columns.tolist())
+#print(df_raw['name_c'].head())
+
+# Extracting the brand name from the 'name_c' column
+df_raw['brand'] = df_raw['name_c'].apply(lambda x: x.split())
+print(df_raw['brand'].head())
