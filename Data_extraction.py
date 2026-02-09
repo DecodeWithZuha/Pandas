@@ -5,7 +5,7 @@ df =pd.read_csv(r'99laptop.csv')
 #print(dataframe.head())
 #print(df.columns.tolist())
 #print(df['name_c'].head(1))
-#print(df['name_c'].iloc[77])
+print(df['name_c'].iloc[77])
 
 df_raw = df[['name_c', 'price']]
 #print(df_raw.head())
@@ -14,5 +14,6 @@ df_raw = df[['name_c', 'price']]
 #print(df_raw['name_c'].head())
 
 # Extracting the brand name from the 'name_c' column
+# firgured out that in the 'name_c' column, the brand name is the first words before 1st ().
 #df_raw['brand'] = df_raw['name_c'].apply(lambda x: x.split())
 #print(df_raw['brand'].head())
