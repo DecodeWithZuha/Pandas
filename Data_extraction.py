@@ -14,5 +14,5 @@ df_raw = df[['name_c', 'price']]
 #print(df_raw['name_c'].head())
 
 # Extracting the brand name from the 'name_c' column
-df_raw['brand'] = df_raw['name_c'].apply(lambda x: x.split())
-print(df_raw['brand'].head())
+#df_raw['brand'] = df_raw['name_c'].apply(lambda x: x.split())
+#print(df_raw['brand'].head())
